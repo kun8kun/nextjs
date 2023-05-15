@@ -1,0 +1,127 @@
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 20px -5px rgba(20, 35, 70, 0.2);
+  border-radius: 10px;
+}
+
+.large.container {
+        width: 100%;
+        flex-flow: column;
+        gap: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-bottom: none;
+        height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+    .large .content {
+        padding: 15px;
+    }
+
+.eyecatch {
+  width: 110px;
+  height: 110px;
+  border-radius: 10px 0 0 10px;
+  flex-shrink: 1;
+  object-fit: cover;
+}
+    .large .eyecatch {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+.tag {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.large .tag {
+   gap: 15px;
+}
+
+.category {
+  padding: 3px 13px;
+  font-size: 10px;
+  font-weight: 700;
+  border: solid 1px #142346;
+  border-radius: 10px;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.title {
+  padding-left: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+    .large .title {
+      font-size: 20px;
+    }
+
+
+@media (min-width:768px) {
+    .container {
+        max-width: 330px;
+        flex-flow: column;
+        gap: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-bottom: none;
+        height: 100%;
+    }
+    
+    .large.container {
+      width: 100%;
+      max-width: 100%;
+      align-items: center;
+      flex-flow: row;
+      gap: 5px;
+}
+    
+    .tag {
+      gap: 15px;
+    }
+    
+    .eyecatch {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .large .eyecatch {
+        width: 60%;
+        max-height: 340px;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .content {
+        padding: 15px;
+    }
+    .large .content {
+        width: 500px;
+    }
+    
+    .title {
+      font-size: 20px;
+    }
+}

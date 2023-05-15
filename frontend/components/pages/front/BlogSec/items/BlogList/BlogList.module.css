@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: solid 1px #EE0979;
+  padding: 0 0 10px;
+}
+
+.list {
+  margin: 0 0 30px;
+}

@@ -1,0 +1,165 @@
+.nav {
+  position: fixed;
+  height: 60px;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.8);  
+  /* background-color: #FFFFFF; */
+  /* box-shadow: 0px -4px 10px -5px rgba(255, 255, 255, 0.8); */
+  /* box-shadow: 0px -4px 20px -5px rgba(0, 0, 0, 0.25); */
+  backdrop-filter: blur(2px);
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
+.list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-size: 12px;
+  width: 15vw;
+  min-width: 45px;
+}
+
+.item {
+  position: relative;
+  width: 18vw;
+  min-width: 45px;
+  height: 50px;
+}
+
+.button {
+  /* border: solid 1px #142346; */
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #142346;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  transition: 0.4s cubic-bezier(0.2, 0.6, 0.3, 1.1);
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  width: 50%;
+  background: white;
+  transition: 0.4s cubic-bezier(0.2, 0.6, 0.3, 1.1);
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width: 2px;
+  background: white;
+  transition: 0.4s cubic-bezier(0.2, 0.6, 0.3, 1.1);
+}
+
+.button.clicked {
+  transform: translate(-50%, -50%);
+  background: #FFF;
+  /* box-shadow: 0px -4px 10px -5px rgba(255, 255, 255, 0.8); */
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.25);
+}
+
+.button.clicked:before {
+  width: 0;
+  background: #142346;
+  transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.button.clicked:after {
+  height: 1px;
+  background: #142346;
+  transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, 0.5);  
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1; /* 親要素のz-indexを設定 */
+    opacity: 0;
+  visibility: hidden;
+    transition: 0.4s cubic-bezier(0.2, 0.6, 0.3, 1.1);
+}
+
+.bgClicked {
+  opacity: 1;
+  visibility: visible;
+}
+
+.serviceListWrapper {
+  border-radius: 10px;
+  position: fixed;
+  padding: 10px;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  visibility: hidden;
+  text-align: center;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.4s cubic-bezier(0.2, 0.6, 0.3, 1.1);
+  z-index: 1; /* .clicked .serviceListのz-indexを設定 */
+}
+
+.serviceList {
+  gap: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.serviceListLink {
+  text-decoration: underline;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.clicked .serviceListWrapper {
+  visibility: visible;
+  bottom: 60px;
+  opacity: 1;
+  /* box-shadow: 0px -4px 10px -5px rgba(255, 255, 255, 0.8); */
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.25);
+}
+
+.serviceLink {
+  font-size: 12px;
+  display: block;
+  text-align:center;
+  line-height: 1.2em;
+  width: 80px;
+  padding: 5px 0;
+}

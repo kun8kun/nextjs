@@ -1,0 +1,62 @@
+
+
+.section {
+  text-align: center;
+}
+
+.tab {
+  position: relative;
+  background-color: #fff;
+  border-radius: 99px;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px auto;
+  width: 300px;
+  z-index: 1;
+}
+
+.tabBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  border-radius: 99px;
+  background-color: #142346;
+  z-index: 2;
+  transition: all .2s ease-in-out;
+}
+
+.tab button {
+  background-color: transparent;
+  border: none;
+  border-radius: 99px;
+  color: #142346;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 24px;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+
+.tab button.active {
+  color: #fff;
+}
+
+.cardContainer {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+@media (min-width:768px) {
+  .cardContainer {
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+}
+}

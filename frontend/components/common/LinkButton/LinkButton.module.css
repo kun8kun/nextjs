@@ -1,0 +1,10 @@
+.link {
+  background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 25px;
+}

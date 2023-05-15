@@ -1,0 +1,39 @@
+
+
+.section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .section {
+    flex-flow: row;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.content {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin: auto 0;
+    text-align: right;
+  }
+}
+
+.text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.6em;
+  margin: 0 0 .8em;
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 30px;
+  }
+}

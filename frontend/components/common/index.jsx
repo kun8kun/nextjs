@@ -1,0 +1,9 @@
+export { default as Header } from "@/common/Header";
+export { default as Footer } from "@/common/Footer";
+export { default as TabMenu } from "@/common/TabMenu";
+export { default as H2 } from "@/common/H2";
+export { default as OddEvenSec } from "@/common/OddEvenSec";
+export { default as HeroDetails } from "@/common/HeroDetails";
+export { default as HeroPages } from "@/common/HeroPages";
+export { default as LinkButton } from "@/common/LinkButton";
+export { default as BlogCard } from "@/common/BlogCard";

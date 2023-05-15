@@ -1,0 +1,40 @@
+.container {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  margin: 0 0 30px;
+}
+
+.heading {
+  display: inline;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4em;
+  color: #142346;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 32px;
+  }
+}
+
+
+
+.subheading {
+  display: inline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4em;
+  padding: 1px;
+  background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (min-width: 768px) {
+  .subheading {
+    font-size: 16px;
+  }
+}

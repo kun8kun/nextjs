@@ -1,0 +1,60 @@
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 99;
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
+  padding: 30px;
+}
+
+.progresBarContainer {
+  background-color: #142346;
+  border: solid 1px #142346;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 200px;
+  height: 20px;
+  position: relative;
+}
+
+.progressBar {
+  background-color: white;
+  border-radius: 8px;
+  height: calc(100% - 4px);
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+}
+
+.image1 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.adCloseButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.adImage {
+  width: auto;
+  position: relative;
+}

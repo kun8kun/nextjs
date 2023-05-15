@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: alwin-labo.backend
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    plan: free
+    region: singapore
+    envVars:
+      - key: API_KEY
+        generateValue: true
+  - type: web
+    name: alwin-labo
+    env: node
+    rootDir: frontend
+    buildCommand: yarn; yarn build
+    startCommand: yarn start
+    autoDeploy: false
+    plan: free
+    region: singapore
+    envVars:
+      - key: NODE_ENV
+        value: production

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.button {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.twitter {
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.en {
+    border: 1px solid #142346;
+    border-radius: 5px;
+    display: block;
+    height: 30px;
+    padding-top: 1px;
+    text-align: center;
+    width: 30px;
+}
